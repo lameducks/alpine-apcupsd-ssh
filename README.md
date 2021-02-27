@@ -2,7 +2,7 @@
 
 Docker image for [apcupsd](http://www.apcupsd.org/) with openssh-client running on [alpine](https://hub.docker.com/_/alpine).
 
-[![dockeri.co](https://dockeri.co/image/lameducks/alpine-apcupsd-ssh)](https://hub.docker.com/r/lameducks/alpine-apcupsd-ssh)
+[![dockeri.co](https://dockeri.co/image/levee223/alpine-apcupsd-ssh)](https://hub.docker.com/r/levee223/alpine-apcupsd-ssh)
 
 ## How to use this image
 
@@ -12,7 +12,7 @@ Docker image for [apcupsd](http://www.apcupsd.org/) with openssh-client running 
 # 1. Runs alpine-apcupsd-ssh with two shutdown targets
 docker run --name alpine-apcupsd-ssh -v alpine-apcupsd-ssh:/root/.ssh \
            -e SPACE_SEPARATED_SSH_DESTINATIONS="root@example1.com admin@example2.com" \
-           -d lameducks/alpine-apcupsd-ssh
+           -d levee223/alpine-apcupsd-ssh
 
 # 2. Generate RSA key pair for SSH login
 docker exec alpine-apcupsd-ssh ssh-kengen -t rsa -f /root/.ssh/id_rsa -N '' -C root@alpine-apcupsd-ssh
