@@ -2,8 +2,6 @@
 
 Docker image for [apcupsd](http://www.apcupsd.org/) with openssh-client running on [alpine](https://hub.docker.com/_/alpine).
 
-[![dockeri.co](https://dockeri.co/image/levee223/alpine-apcupsd-ssh)](https://hub.docker.com/r/levee223/alpine-apcupsd-ssh)
-
 ## How to use this image
 
 ### Usage for UPS type USB
